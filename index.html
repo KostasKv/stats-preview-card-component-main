@@ -7,6 +7,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="dist/output.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet"> 
+
   <title>Frontend Mentor | Stats preview card component</title>
 
   <style>
@@ -15,15 +19,36 @@
   </style>
 </head>
 <body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
+  <div class="flex h-screen w-screen justify-center items-center" role="main">
+    <div class="flex flex-col min-w-[327px] w-[327px] h-[781px] sm:w-[1111px] sm:h-[447px] bg-dark-desaturated-blue-card-bg rounded-xl overflow-hidden
+                sm:flex-row-reverse">
+      <div class="bg-[#7500b8]">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="images/image-header-desktop.jpg">
+          <source srcset="images/image-header-mobile.jpg">
+          <img src="images/image-header-mobile.jpg" alt="Casual shot of an office table with few people working"
+               class="opacity-50 object-fill">
+        </picture>
+      </div>
+      <div class="p-9 mt-1 sm:p-[52px] sm:w-[550px] sm:mt-5 sm:pr-28">
+        <h1 class="text-white text-[27px] text-center font-bold font-inter leading-8
+                    sm:text-4xl sm:leading-[44px] sm:text-left">
+          Get <span class="text-soft-violet">insights</span> that help your business grow.
+        </h1>
+        <p class="text-slightly-transparent-white-main text-[15px] font-inter font-normal text-center leading-6 mt-5
+                  sm:text-left sm:mt-[26px]">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.
+        </p>
+        <div class="flex flex-col items-center justify-between h-52 mt-8
+                    sm:flex-row sm:-mt-1 ">
+          <p class="text-2xl leading-6 font-bold text-white w-[89px] text-center sm:text-left font-inter">10k+ <span class="text-slightly-transparent-white-main font-normal uppercase text-xs font-sans tracking-widest">companies</span></p>
+          <p class="text-2xl leading-6 font-bold text-white w-[89px] text-center sm:text-left font-inter">314 <span class="text-slightly-transparent-white-main font-normal uppercase text-xs font-sans tracking-widest">templates</span></p>
+          <p class="text-2xl leading-6 font-bold text-white w-[89px] text-center sm:text-left font-inter sm:mr-4 sm:-ml-2">12M+ <span class="text-slightly-transparent-white-main font-normal uppercase text-xs font-sans tracking-widest">queries</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer>
     <div class="attribution">
