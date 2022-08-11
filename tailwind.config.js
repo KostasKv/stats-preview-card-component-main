@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      'very-dark-blue-main-bg': 'hsl(233, 47%, 7%)',
+      'very-dark-blue-main-bg': '#0a0c1b',
       'dark-desaturated-blue-card-bg': 'hsl(244, 38%, 16%)',
       'soft-violet': 'hsl(277, 64%, 61%)',
       'white': 'hsl(0, 0%, 100%)',
